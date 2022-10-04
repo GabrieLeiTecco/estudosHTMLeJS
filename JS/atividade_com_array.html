@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>sadsqoadaskloasdolk</title>
+</head>
+<body>
+        <input type="text" id="text">
+        <button type="button" id="add" onclick="add()">Adicionar</button>
+        <button type="button" id="ord" onclick="ord()">Ordenar</button>
+    
+</body>
+<script>
+    var objetos = ['Cadeira', 'Impressora', 'Garfo']
+
+    function add() {
+        var texto = document.getElementById('text').value
+         if (texto != '') {
+            if (objetos.indexOf(texto) !== -1) {
+                alert('Objeto ja adicionado')
+            } else{
+                objetos.push(texto)
+                console.log(objetos)
+                document.getElementById('text').value = ''
+            }
+        }else{
+            alert('Sem valor inserido, favor insira valor na caixa de texto.')
+        }
+    }
+
+    function ord() {
+        console.log(objetos.sort())
+    }
+</script>
+</html>

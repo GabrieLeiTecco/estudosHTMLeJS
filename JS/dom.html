@@ -1,0 +1,122 @@
+    <!DOCTYPE html>
+    <html>
+    <!-- HEAD -->
+    <head>
+    <meta charset="UTF-8">
+    <title>dom rs</title>
+    <style>
+        .estiloso{
+            background: #FF0000;
+            color: #fff;
+        }
+
+        .maisEstiloso{
+            height: 372px;
+            background-color: aquamarine;
+            color: #FF0000;
+            border: 10px solid green;
+            border-radius: 10px;
+            border-start-start-radius: 50px;
+            border-start-end-radius: 38px;
+            border-bottom-left-radius: 100px;
+            border-bottom-right-radius: 832px;
+        }
+    </style>
+    </head>
+
+    <!-- BODY -->
+    <body>
+    <!-- RECEBER VARIAVEIS -->
+    <!-- <input type="text" 
+    placeholder="Digite seu nome" 
+    id="nome" 
+    class="input_texto" 
+    name="nome"> -->
+
+    <!-- ARMAZENAR CARACTERES -->
+    <!-- 
+    <input type="text" placeholder="digite aq" onkeyup="caractere()" id="entrada">
+    <hr>
+    <span>Letras:</span>
+    <input type="text" placeholder="letras" id="letras" disabled>
+    <span>Numeros:</span>
+    <input type="text" placeholder="numeros" id="numeros" disabled> -->
+
+    <!-- MUDAR ESTILO -->
+    <!-- <div>
+    <h3>estiloso</h3>
+
+    <button type="button" onclick="mudacor('#FF0000', '250px', '10px')"">vermelho</button>
+    <button type="button" onclick="mudacor('#00FF00', '50', '150px')">verde</button>
+    <button type="button" onclick="mudacor('#0000FF', '590px')">azul</button>
+
+    <hr>
+    </div>
+
+    <div id="fundo" style="border: 1px solid black; width: 100px; height: 100px;">
+
+    </div> -->
+
+    <!-- MODIFICAR CLASSE -->
+    <center>
+    <div id="mensagem" class="estiloso">
+        classes fodas
+    </div>
+    <hr>
+    <button type="button" onclick="mudaClasse()">mudar classes</button>
+    </center>
+    </body>
+
+    <!-- JS -->
+    <script>
+    // RECEBER VARTAVEOS
+    // console.log(document.getElementById('nome'))
+    // console.log(document.getElementsByTagName('input'))
+    // console.log(document.getElementsByClassName('input_texto'))
+    // console.log(document.getElementsByName('nome'))
+
+
+    // ARMAZENAR CARACTERES
+    // function caractere() {
+    //     var caractere = document.getElementById('entrada').value
+    //     document.getElementById('entrada').value = ''
+    //     caractere.trim()
+    //     switch (caractere) {
+    //         case '0':
+    //         case '1':
+    //         case '2':
+    //         case '3':
+    //         case '4':
+    //         case '5':
+    //         case '6':
+    //         case '7':
+    //         case '8':
+    //         case '9':
+    //             document.getElementById('numeros').value += caractere
+    //             break;
+
+    //         default:
+    //         document.getElementById('letras').value += caractere
+    //             break;
+    //     }
+    //     }
+
+    //MUDAR ESTILO
+        // function mudacor(corDeFundo, larg, alt) {
+        //     document.getElementById('fundo').style.background = corDeFundo
+        //     document.getElementById('fundo').style.width = larg
+        //     document.getElementById('fundo').style.height = alt
+        // }
+
+    //MODIFICAR CLASSE
+    function mudaClasse() {
+        var classe = document.getElementById('mensagem').className
+        if (classe == 'estiloso') {
+            document.getElementById('mensagem').className = 'maisEstiloso'
+        } else {
+            document.getElementById('mensagem').className = 'estiloso'
+        }     
+    }
+    </script>
+
+    </html>

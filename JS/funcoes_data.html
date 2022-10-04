@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> funcoes</title>
+    <script>
+        var data = new Date()
+        var dias = prompt('quantos dias quer adicionar')
+        var meses = prompt('quantos meses quer adicionar')
+        var anos = prompt('quantos anos quer adicionar')
+
+        data.setDate(data.getDate() + parseInt(dias))
+        data.setMonth(data.getMonth() + parseInt(meses))
+        data.setFullYear(data.getFullYear() + parseInt(anos))
+        
+        document.write(data.toString())
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>askksaskasksakksaksasaksaksksakasks</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //////////////WHILE
+    // var x = 1
+    // while (x <= 100) {
+    //     document.write(x + '<br />')
+        
+    //     x++ //incremento tem q ser feito antes do continue
+
+    //     if (x == 5) {
+    //         continue //faz com que o laço pare de executar essa parte e passe pra próxima parte do laço
+    //     }
+
+    //     if (x == 10) {
+    //         break //faz com q o laço de repetição pare
+    //     }
+    // }
+
+    //////////////DO WHILE
+    // var x = 11
+    // do {
+    //     document.write(x + '<br />')
+    // } while (x <= 10);
+    //break e continue funcionam nesse tbm
+
+    //////////////FOR
+    // for (var x = 10; x <= 0; x--) {
+    //     document.write(x + '<br />')
+
+    ////break e continue funcionam igual
+    // }
+
+    //////////////PRATICA
+    // var abc = []
+    // abc[0] = 'a'
+    // abc[1] = 'b'
+    // abc[2] = 'c'
+
+    // var y = 0
+
+    // while(y < abc.length){
+    //     document.write(abc[y]+'<br />')
+    //     y++
+    // }
+
+    //////////////FOR IN
+        // var array = Array()
+        // array['a'] = 'a'
+        // array[10] = 'b'
+        // array[true] = 'v'
+        // array['abacaxi'] = 'c'
+        // array[5] = 'd'
+
+        // for(var x in array){
+        //     document.write('indice: '+x+' valor: '+array[x])
+        // }
+
+    //////////////FOR IN
+        var func = ['joao', 'patricio', 'juliano', 'jenifero', 'danila']
+        
+        //pode botar a function numa var e colocar a var no forEach, fica mais bonito
+        func.forEach(function(valor, indice, array) { //ordem: valor, indice, array
+            document.write('Valor: '+valor+'<br />'+'Indice: '+indice+'<br />'+'Array: '+array+'<br />'+'<hr />')
+
+            if (valor == 'joao') {
+                array[indice] = 'Um novo valor'
+            }
+        })
+        console.log(func)
+</script>
+</html>

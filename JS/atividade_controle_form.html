@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<!-- HEAD -->
+<head>
+    <meta charset="UTF-8">
+    <title>fodase</title>
+</head>
+
+<!-- BODY -->
+<body>
+    <input type="text" 
+    name="texto" 
+    id="campoTexto"
+    onfocus="foco()"
+    onblur="desfoco()">
+</body>
+
+<!-- CODIGO -->
+<script>
+    function foco() {
+        document.getElementById('campoTexto').style.backgroundColor = 'yellow'
+    }
+
+    function desfoco() {
+        var texto = document.getElementById('campoTexto').value
+        if (texto.length <= 3) {
+            document.getElementById('campoTexto').style.backgroundColor = 'red'
+        } else {
+            document.getElementById('campoTexto').style.backgroundColor = 'lightgreen'  
+        }
+    }
+</script>
+</html>

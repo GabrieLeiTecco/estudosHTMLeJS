@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> funcoes</title>
+    <script>
+        // var a = prompt('numero')
+        // var opeope = prompt('operaçao sem acento')
+        // var b = prompt('numero')
+        // opeope = opeope.toLowerCase()
+        // a = parseFloat(a)
+        // b = parseFloat(b)
+        // function contaFoda(a, b, opeope) {
+        //     if (opeope == 'mais') {
+        //         var resultado = (a+b)
+        //     } else if(opeope == 'menos'){
+        //         resultado = a-b
+
+        //     }else if(opeope == 'divido'){
+        //         resultado = a/b
+
+        //     }else if(opeope == 'vezes'){
+        //         resultado = a*b
+
+        //     }else{
+        //         alert('nao')
+        //         window.close()
+        //     }
+        //     return resultado
+        // }
+        // var result = contaFoda(a, b, opeope)
+        // alert(result)
+
+       var a = document.getElementById('num1').value
+       var b = document.getElementById('num2').value
+        var result
+        function soma() {
+            result = a+n
+            alert(result)
+        }
+
+        function subt() {
+            result = a-b
+            alert(result)
+        }
+
+        function divi() {
+            result = a/b
+            alert(result)
+        }
+
+        function mult() {
+            result = a*b
+            alert(result)
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="num1">
+    <input type="text" id="num2"> <br><br>
+    <button id="soma" onclick="soma()">Soma</button>
+    <button id="sub" onclick="subt()">Subtrair</button> <br><br>
+    <button id="div" onclick="divi()">Dividir</button>
+    <button id="multi" onclick="mult()">Multiplicar</button> <br><br>
+</body>
+</html>

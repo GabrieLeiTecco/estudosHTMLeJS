@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>fodase</title>
+
+    <script>
+    var nome = prompt('qual seu nome? ')
+    var alt = prompt('qual sua altura? (em cm) ')
+    var peso = prompt('qual seu peso? ')
+    
+    nome = parseFloat(nome)
+    alt = parseFloat(alt)
+    peso = parseFloat(peso)
+
+    alt /= 100
+
+    var imc = peso/(alt*alt)
+
+    if (imc < 16 && imc >= 0) {
+        alert('ala magrelo vai pro médico')
+    } else if (imc > 16 && imc <= 16.99) {
+        alert('magrelo come')
+    } else if (imc >= 17 && imc <= 18.49) {
+        alert('magrin')
+    } else if (imc >= 18.50 && imc <= 24.99) {
+        alert('kknormie')
+    } else if (imc >= 25 && imc <= 29.99) {
+        alert('gordin')
+    } else if (imc >= 30 && imc <= 34.99) {
+        alert('gordao vai correr')
+    } else if (imc >= 35 && imc <= 39.99) {
+        alert('gordasso vai emagrecer')
+    } else if (imc >= 40) {
+        alert('vai morrer em 3')
+        alert('2')
+        alert('1')
+        window.close()
+    }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
